@@ -51,9 +51,9 @@ fi
 
 redis-benchmark -q -n 100000 --csv > results/redis-benchmark.log
 
-./speedtest-cli --server=16089 > results/speedtest1.log
-./speedtest-cli --server=16089 > results/speedtest2.log
-./speedtest-cli --server=16089 > results/speedtest3.log
+./speedtest-cli > results/speedtest1.log
+./speedtest-cli > results/speedtest2.log
+./speedtest-cli > results/speedtest3.log
 
 # Wraps it all up in a nice package
 tar -zcvf "results-$PROVIDER.tgz" results
